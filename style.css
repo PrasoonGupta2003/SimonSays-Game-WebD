@@ -1,32 +1,113 @@
-body{
+body {
     text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 1rem;
 }
-.btn{
+
+h1 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.line-one,
+.line-two {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+.btn {
     height: 200px;
     width: 200px;
     border-radius: 20%;
-    border: 10px solid black;
-    margin: 2.5rem;
-}
-.btn-container{
+    border: 8px solid black;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
-.red{
+
+.red {
     background-color: #d95980;
 }
-.yellow{
+
+.yellow {
     background-color: #f99b45;
 }
-.blue{
+
+.blue {
     background-color: #63aac0;
 }
-.purple{
+
+.purple {
     background-color: #890ff9;
 }
-.flash{
+
+.flash {
     background-color: white;
 }
-.userFlash{
+
+.userFlash {
     background-color: rgb(24, 246, 24);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .btn {
+        height: 120px;
+        width: 120px;
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        height: 90px;
+        width: 90px;
+        font-size: 1rem;
+        margin: 0.4rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2,
+    h3 {
+        font-size: 0.9rem;
+    }
 }
